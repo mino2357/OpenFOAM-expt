@@ -28,9 +28,9 @@ deltaT          1e-05;
 
 writeControl    adjustableRunTime;
 
-writeInterval   0.1;
+writeInterval   0.01;
 
-purgeWrite      4;
+purgeWrite      2;
 
 writeFormat     ascii;
 
