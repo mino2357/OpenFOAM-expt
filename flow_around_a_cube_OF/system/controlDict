@@ -14,7 +14,7 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-application     rhoPimpleFoam;
+application     pimpleFoam;
 
 startFrom       latestTime;
 
@@ -24,7 +24,7 @@ stopAt          endTime;
 
 endTime         10.0;
 
-deltaT          1e-05;
+deltaT          1e-04;
 
 writeControl    adjustableRunTime;
 
@@ -46,7 +46,7 @@ runTimeModifiable true;
 
 adjustTimeStep  yes;
 
-maxCo           0.5;
+maxCo           0.4;
 
 functions
 {

@@ -9,52 +9,14 @@ FoamFile
 {
     version     2.0;
     format      ascii;
-    class       volScalarField;
-    object      nut;
+    class       dictionary;
+    object      transportProperties;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [0 2 -1 0 0 0 0];
+transportModel  Newtonian;
 
-internalField   uniform 0;
-
-boundaryField
-{
-    Inlet
-    {
-        type            zeroGradient;
-    }
-
-    Outlet
-    {
-        type            zeroGradient;
-    }
-
-    RightWall
-    {
-        type            zeroGradient;
-    }
-
-    LeftWall
-    {
-        type            zeroGradient;
-    }
-
-    CubeWall
-    {
-        type            zeroGradient;
-    }
-
-    Ceiling
-    {
-        type            zeroGradient;
-    }
-
-    Floor
-    {
-        type            zeroGradient;
-    }
-}
+nu              1.8e-5;
 
 
 // ************************************************************************* //

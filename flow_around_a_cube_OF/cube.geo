@@ -5,8 +5,8 @@ n=5;
 //
 Point(1) = {0, 0, 0, 1.0};
 //+
-Extrude {4, 0, 0} {
-  Point{1}; Layers {40*n}; Recombine;
+Extrude {2, 0, 0} {
+  Point{1}; Layers {20*n}; Recombine;
 }
 //+
 Extrude {1, 0, 0} {
@@ -52,8 +52,6 @@ Extrude {0, 0, 1} {
 //+
 Physical Surface("Floor", 105) = {1, 4, 6, 2, 3, 5, 7, 8};
 //+
-Physical Surface("SideWall", 106) = {31, 53, 35, 28, 56, 59, 67, 20, 70, 73, 12, 16};
-//+
 Physical Surface("Ceiling", 107) = {61, 64, 68, 71, 46, 57, 74, 50, 54};
 //+
 Physical Surface("Inlet", 108) = {72, 47, 51, 34, 38, 9};
@@ -63,3 +61,7 @@ Physical Surface("Outlet", 109) = {58, 62, 66, 27, 23, 18};
 Physical Surface("CubeWall", 110) = {32, 15, 41, 39, 22};
 //+
 Physical Volume("Fluid", 111) = {16, 15, 14, 13, 12, 9, 2, 3, 4, 5, 6, 17, 11, 10, 1, 7, 8};
+//+
+Physical Surface("RightWall", 112) = {35, 53, 31, 56, 28, 59};
+//+
+Physical Surface("LeftWall", 113) = {73, 12, 70, 16, 20, 67};

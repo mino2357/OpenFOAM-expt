@@ -14,7 +14,7 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [1 -1 -2 0 0 0 0];
+dimensions      [0 2 -2 0 0 0 0];
 
 internalField   uniform 101325.0;
 
@@ -39,7 +39,12 @@ boundaryField
 	*/
     }
 
-    SideWall
+    RightWall
+    {
+        type            zeroGradient;
+    }
+
+    LeftWall
     {
         type            zeroGradient;
     }

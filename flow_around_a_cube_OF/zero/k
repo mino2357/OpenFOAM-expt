@@ -33,28 +33,35 @@ boundaryField
         value           uniform 0;
     }
 
-    SideWall
+    RightWall
     {
-        type            fixedValue;
-        value           uniform 0;
+        type            zeroGradient;
+    }
+
+    LeftWall
+    {
+        type            zeroGradient;
     }
 
     CubeWall
     {
-        type            fixedValue;
-        value           uniform 0;
+        //type            fixedValue;
+        //value           uniform 0;
+        type            zeroGradient;
     }
 
     Floor
     {
-        type            fixedValue;
-        value           uniform 0;
+        //type            fixedValue;
+        //value           uniform 0;
+        type            zeroGradient;
     }
 
     Ceiling
     {
-        type            fixedValue;
-        value           uniform 0;
+        //type            fixedValue;
+        //value           uniform 0;
+        type            zeroGradient;
     }
 }
 

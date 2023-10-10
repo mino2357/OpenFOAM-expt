@@ -34,10 +34,13 @@ boundaryField
         type            zeroGradient;
     }
 
-    SideWall
+    RightWall
     {
-        type            fixedValue;
-        value           uniform 300.0;
+        type            zeroGradient;
+    }
+
+    LeftWall
+    {
         type            zeroGradient;
     }
 

@@ -16,14 +16,14 @@ FoamFile
 
 dimensions      [0 1 -1 0 0 0 0];
 
-internalField   uniform (10.0 0 0);
+internalField   uniform (1.0 0.0 0.0);
 
 boundaryField
 {
     Inlet
     {
         type            fixedValue;
-        value           uniform (10 0 0);
+        value           uniform (1 0 0);
     }
 
     Outlet
@@ -43,7 +43,12 @@ boundaryField
         type            noSlip;
     }
 
-    SideWall
+    RightWall
+    {
+        type            slip;
+    }
+
+    LeftWall
     {
         type            slip;
     }
