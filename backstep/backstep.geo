@@ -65,3 +65,13 @@ Transfinite Volume "*";
 Extrude {0, 0, 10} {
   Surface{1}; Surface{2}; Surface{3}; Layers {50}; Recombine;
 }
+//+
+Physical Surface("Inlet", 29) = {5};
+//+
+Physical Surface("Outlet", 30) = {11, 14};
+//+
+Physical Surface("Side", 31) = {12, 8, 1, 2, 3, 16};
+//+
+Physical Surface("Wall", 32) = {6, 13, 15, 9, 4};
+//+
+Physical Volume("Fluid", 33) = {1, 2, 3};
