@@ -1,7 +1,7 @@
 //+
 SetFactory("OpenCASCADE");
 //+
-n=5;
+n=2.0;
 //
 Point(1) = {0, 0, 0, 1.0};
 //+
@@ -13,12 +13,12 @@ Extrude {1, 0, 0} {
   Point{2}; Layers {10*n}; Recombine;
 }
 //+
-Extrude {8, 0, 0} {
-  Point{3}; Layers {80*n}; Recombine;
+Extrude {10, 0, 0} {
+  Point{3}; Layers {100*n}; Recombine;
 }
 //+
-Extrude {0, 1.0, 0} {
-  Curve{1}; Curve{2}; Curve{3}; Layers {10*n}; Recombine;
+Extrude {0, 3.0, 0} {
+  Curve{1}; Curve{2}; Curve{3}; Layers {30*n}; Recombine;
 }
 //+
 Extrude {0, 1, 0} {
@@ -29,8 +29,8 @@ Line(17) = {10, 11};
 //+
 Transfinite Curve {17} = 10*n+1 Using Progression 1;
 //+
-Extrude {0, 1.0, 0} {
-  Curve{13}; Curve{17}; Curve{16}; Layers {10*n}; Recombine;
+Extrude {0, 3.0, 0} {
+  Curve{13}; Curve{17}; Curve{16}; Layers {30*n}; Recombine;
 }
 //+
 Extrude {0, 0, 1} {
@@ -46,8 +46,8 @@ Transfinite Curve {36, 64, 57, 44} = 10*n+1 Using Progression 1;
 Transfinite Surface "*";
 Recombine Surface "*";
 //+
-Extrude {0, 0, 1} {
-  Surface{41}; Surface{40}; Surface{37}; Surface{33}; Surface{29}; Surface{25}; Surface{21}; Surface{17}; Surface{13}; Layers {10*n}; Recombine;
+Extrude {0, 0, 3} {
+  Surface{41}; Surface{40}; Surface{37}; Surface{33}; Surface{29}; Surface{25}; Surface{21}; Surface{17}; Surface{13}; Layers {30*n}; Recombine;
 }
 //+
 Physical Surface("Floor", 105) = {1, 4, 6, 2, 3, 5, 7, 8};
