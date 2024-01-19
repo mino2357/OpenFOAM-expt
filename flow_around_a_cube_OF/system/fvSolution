@@ -18,31 +18,22 @@ solvers
 {
     "(p|rho)"
     {
-        //solver          GAMG;
-        solver          PCG;
-        //smoother        DIC;
-        preconditioner  DIC;
+        solver          GAMG;
+        smoother        DIC;
+        //solver          PCG;
+        //preconditioner  DIC;
         tolerance       1e-6;
         relTol          0.01;
-	
-	//solver  GAMG;
-	//tolerance   0;
-	//relTol   0.01;
-	//smoother   DICGaussSeidel;
     }
 
     "(p|rho)Final"
     {
-        //solver          GAMG;
-        solver          PCG;
-        //smoother        DIC;
-        preconditioner  DIC;
+        solver          GAMG;
+        smoother        DIC;
+        //solver          PCG;
+        //preconditioner  DIC;
         tolerance       1e-9;
         relTol          0;
-	
-	//$p;
-	//tolerance   1e-9;
-	//relTol   0;
     }
 
     "(U|e|k|nuTilda|nut)"
@@ -65,12 +56,12 @@ solvers
 PIMPLE
 {
     momentumPredictor yes;
-    nOuterCorrectors 3;
-    nCorrectors     2;
+    nOuterCorrectors 1;
+    nCorrectors     1;
     nNonOrthogonalCorrectors 0;
 
-//    pMinFactor      0.5;
-//    pMaxFactor      2.0;
+    pRefCell    0;
+    pRefValue   0;
 }
 
 relaxationFactors

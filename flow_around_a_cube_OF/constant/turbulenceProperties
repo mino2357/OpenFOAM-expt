@@ -18,41 +18,14 @@ simulationType      LES;
 
 LES
 {
-    LESModel        kEqn;
-
-    turbulence      on;
-
-    printCoeffs     on;
-
-    delta           cubeRootVol;
-
-    cubeRootVolCoeffs
+    LESModel        Smagorinsky;
+    SmagorinskyCoeffs
     {
-        deltaCoeff      1;
+        Ce              1.048;
+        Ck              0.094;
     }
 
-    PrandtlCoeffs
-    {
-        delta           cubeRootVol;
-        cubeRootVolCoeffs
-        {
-            deltaCoeff      1;
-        }
-
-        smoothCoeffs
-        {
-            delta           cubeRootVol;
-            cubeRootVolCoeffs
-            {
-                deltaCoeff      1;
-            }
-
-            maxDeltaRatio   1.1;
-        }
-
-        Cdelta          0.158;
-    }
-
+    delta           vanDriest;
     vanDriestCoeffs
     {
         delta           cubeRootVol;
@@ -60,33 +33,12 @@ LES
         {
             deltaCoeff      1;
         }
-
-        smoothCoeffs
-        {
-            delta           cubeRootVol;
-            cubeRootVolCoeffs
-            {
-                deltaCoeff      1;
-            }
-
-            maxDeltaRatio   1.1;
-        }
-
         Aplus           26;
         Cdelta          0.158;
     }
 
-    smoothCoeffs
-    {
-        delta           cubeRootVol;
-        cubeRootVolCoeffs
-        {
-            deltaCoeff      1;
-        }
-
-        maxDeltaRatio   1.1;
-    }
+    printCoeffs     on;
+    turbulence      on;
 }
-
 
 // ************************************************************************* //

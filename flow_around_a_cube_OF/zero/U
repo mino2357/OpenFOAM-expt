@@ -16,7 +16,7 @@ FoamFile
 
 dimensions      [0 1 -1 0 0 0 0];
 
-internalField   uniform (1.0 0.0 0.0);
+internalField   uniform (1 0 0);
 
 boundaryField
 {
@@ -28,9 +28,7 @@ boundaryField
 
     Outlet
     {
-        type            pressureInletOutletVelocity;
-        inletValue      uniform (0 0 0);
-        value           uniform (0 0 0);
+        type            zeroGradient;
     }
 
     Ceiling
