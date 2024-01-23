@@ -1,7 +1,7 @@
 /*--------------------------------*- C++ -*----------------------------------*\
 | =========                 |                                                 |
 | \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
-|  \\    /   O peration     | Version:  2306                                  |
+|  \\    /   O peration     | Version:  2312                                  |
 |   \\  /    A nd           | Website:  www.openfoam.com                      |
 |    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
@@ -22,50 +22,50 @@ FoamFile
     {
         type            wall;
         physicalType    wall;
-        nFaces          36000;
-        startFace       8642800;
+        nFaces          17640;
+        startFace       2954308;
     }
     Inlet
     {
         type            patch;
         physicalType    patch;
-        nFaces          11200;
-        startFace       8678800;
+        nFaces          5488;
+        startFace       2971948;
     }
     LeftWall
     {
         type            wall;
         physicalType    wall;
-        nFaces          20800;
-        startFace       8690000;
+        nFaces          10192;
+        startFace       2977436;
     }
     CubeWall
     {
         type            wall;
         physicalType    wall;
-        nFaces          2000;
-        startFace       8710800;
+        nFaces          980;
+        startFace       2987628;
     }
     Outlet
     {
         type            patch;
         physicalType    patch;
-        nFaces          11200;
-        startFace       8712800;
+        nFaces          5488;
+        startFace       2988608;
     }
     RightWall
     {
         type            wall;
         physicalType    wall;
-        nFaces          20800;
-        startFace       8724000;
+        nFaces          10192;
+        startFace       2994096;
     }
     Ceiling
     {
-        type            patch;
-        physicalType    patch;
-        nFaces          36400;
-        startFace       8744800;
+        type            wall;
+        physicalType    wall;
+        nFaces          17836;
+        startFace       3004288;
     }
 )
 

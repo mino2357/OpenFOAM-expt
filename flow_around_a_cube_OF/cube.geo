@@ -1,7 +1,7 @@
 //+
 SetFactory("OpenCASCADE");
 //+
-n=2.0;
+n=1.4;
 //
 Point(1) = {0, 0, 0, 1.0};
 //+
