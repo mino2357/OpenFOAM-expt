@@ -9,9 +9,9 @@ Build  : _c39a0f64-20231220 OPENFOAM=2312 version=2312
 Arch   : "LSB;label=32;scalar=64"
 Exec   : pimpleFoam -parallel
 Date   : Jan 23 2024
-Time   : 22:58:44
+Time   : 23:58:43
 Host   : C16-3
-PID    : 5388
+PID    : 5555
 I/O    : uncollated
 Case   : /home/mino2357/OpenFOAM-expt/flow_around_a_cube_OF
 nProcs : 6
@@ -84,7 +84,7 @@ DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00264236710762087, Final re
 DILUPBiCGStab:  Solving for Uz, Initial residual = 0.00246438437743661, Final residual = 1.31242503877863e-10, No Iterations 2
 GAMG:  Solving for p, Initial residual = 0.0153342895674219, Final residual = 9.01727884177346e-10, No Iterations 32
 time step continuity errors : sum local = 1.21763763827188e-14, global = 4.28014247670372e-18, cumulative = 1.42391806057163e-17
-ExecutionTime = 3.77 s  ClockTime = 4 s
+ExecutionTime = 3.65 s  ClockTime = 4 s
 
 fieldAverage fieldAverage1:
     Reading/initialising field UMean
@@ -111,7 +111,7 @@ DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00406936035593731, Final re
 DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0037984362294174, Final residual = 3.63850304586218e-10, No Iterations 2
 GAMG:  Solving for p, Initial residual = 0.0362387563165733, Final residual = 6.38703425153389e-10, No Iterations 38
 time step continuity errors : sum local = 4.35342056458551e-15, global = 5.11268281791601e-18, cumulative = 2.47707360473663e-17
-ExecutionTime = 7.23 s  ClockTime = 7 s
+ExecutionTime = 7.04 s  ClockTime = 7 s
 
 fieldAverage fieldAverage1 write:
     Calculating averages
@@ -132,7 +132,7 @@ DILUPBiCGStab:  Solving for Uy, Initial residual = 3.23996961916354e-05, Final r
 DILUPBiCGStab:  Solving for Uz, Initial residual = 2.00587578361929e-05, Final residual = 2.54565047396961e-10, No Iterations 1
 GAMG:  Solving for p, Initial residual = 0.00469970299966271, Final residual = 9.70763938302939e-10, No Iterations 23
 time step continuity errors : sum local = 3.87647683181053e-15, global = 6.00627422926217e-18, cumulative = 3.66503025550313e-17
-ExecutionTime = 9.41 s  ClockTime = 9 s
+ExecutionTime = 9.24 s  ClockTime = 9 s
 
 fieldAverage fieldAverage1 write:
     Calculating averages
@@ -153,7 +153,7 @@ DILUPBiCGStab:  Solving for Uy, Initial residual = 1.4535607016904e-05, Final re
 DILUPBiCGStab:  Solving for Uz, Initial residual = 8.69808219447343e-06, Final residual = 1.64870219045577e-10, No Iterations 1
 GAMG:  Solving for p, Initial residual = 0.00286318794519159, Final residual = 8.33327675036835e-10, No Iterations 24
 time step continuity errors : sum local = 2.72696884823044e-15, global = 7.58194060833224e-18, cumulative = 5.171605795442e-17
-ExecutionTime = 11.73 s  ClockTime = 12 s
+ExecutionTime = 11.6 s  ClockTime = 12 s
 
 fieldAverage fieldAverage1 write:
     Calculating averages
@@ -174,7 +174,7 @@ DILUPBiCGStab:  Solving for Uy, Initial residual = 1.0859905274344e-05, Final re
 DILUPBiCGStab:  Solving for Uz, Initial residual = 6.83739575559617e-06, Final residual = 1.86424460358514e-10, No Iterations 1
 GAMG:  Solving for p, Initial residual = 0.00217580617553606, Final residual = 5.74461045998151e-10, No Iterations 25
 time step continuity errors : sum local = 2.0019981133087e-15, global = 8.34163958432438e-18, cumulative = 6.89226673362702e-17
-ExecutionTime = 13.94 s  ClockTime = 14 s
+ExecutionTime = 13.76 s  ClockTime = 14 s
 
 fieldAverage fieldAverage1 write:
     Calculating averages
@@ -195,7 +195,7 @@ DILUPBiCGStab:  Solving for Uy, Initial residual = 1.28409761347293e-05, Final r
 DILUPBiCGStab:  Solving for Uz, Initial residual = 8.41551731071937e-06, Final residual = 2.89396334712215e-10, No Iterations 1
 GAMG:  Solving for p, Initial residual = 0.00236779735661762, Final residual = 9.01980540873341e-10, No Iterations 37
 time step continuity errors : sum local = 3.44833397811943e-15, global = 9.93965799826918e-18, cumulative = 8.9252419217203e-17
-ExecutionTime = 16.64 s  ClockTime = 17 s
+ExecutionTime = 16.45 s  ClockTime = 17 s
 
 fieldAverage fieldAverage1 write:
     Calculating averages
@@ -216,7 +216,7 @@ DILUPBiCGStab:  Solving for Uy, Initial residual = 1.60518221606415e-05, Final r
 DILUPBiCGStab:  Solving for Uz, Initial residual = 1.07352197612726e-05, Final residual = 4.73312007770269e-10, No Iterations 1
 GAMG:  Solving for p, Initial residual = 0.00276885022872722, Final residual = 8.75291475254066e-10, No Iterations 28
 time step continuity errors : sum local = 4.09154645675443e-15, global = 1.24401848181629e-17, cumulative = 1.14406074851843e-16
-ExecutionTime = 18.98 s  ClockTime = 19 s
+ExecutionTime = 18.76 s  ClockTime = 19 s
 
 fieldAverage fieldAverage1 write:
     Calculating averages
@@ -237,7 +237,7 @@ DILUPBiCGStab:  Solving for Uy, Initial residual = 2.07171189610997e-05, Final r
 DILUPBiCGStab:  Solving for Uz, Initial residual = 1.39899445693942e-05, Final residual = 7.91797731948581e-10, No Iterations 1
 GAMG:  Solving for p, Initial residual = 0.00331736800647925, Final residual = 9.5988724155692e-10, No Iterations 27
 time step continuity errors : sum local = 5.57260163849912e-15, global = 1.55473297081122e-17, cumulative = 1.44164825531147e-16
-ExecutionTime = 21.37 s  ClockTime = 21 s
+ExecutionTime = 21.07 s  ClockTime = 21 s
 
 fieldAverage fieldAverage1 write:
     Calculating averages
@@ -258,7 +258,7 @@ DILUPBiCGStab:  Solving for Uy, Initial residual = 2.67568243102292e-05, Final r
 DILUPBiCGStab:  Solving for Uz, Initial residual = 1.8177275138324e-05, Final residual = 8.5747558677658e-11, No Iterations 2
 GAMG:  Solving for p, Initial residual = 0.00397268272842446, Final residual = 8.01387243193336e-10, No Iterations 33
 time step continuity errors : sum local = 6.11239773116491e-15, global = 1.71108642718532e-17, cumulative = 1.80026444680524e-16
-ExecutionTime = 23.67 s  ClockTime = 24 s
+ExecutionTime = 23.36 s  ClockTime = 24 s
 
 fieldAverage fieldAverage1 write:
     Calculating averages
@@ -279,7 +279,7 @@ DILUPBiCGStab:  Solving for Uy, Initial residual = 3.32906162305836e-05, Final r
 DILUPBiCGStab:  Solving for Uz, Initial residual = 2.26871241962324e-05, Final residual = 1.54612276605269e-10, No Iterations 2
 GAMG:  Solving for p, Initial residual = 0.004611284167459, Final residual = 7.46011738346824e-10, No Iterations 25
 time step continuity errors : sum local = 7.12170907464134e-15, global = 2.0890872801927e-17, cumulative = 2.21044544842025e-16
-ExecutionTime = 25.88 s  ClockTime = 26 s
+ExecutionTime = 25.55 s  ClockTime = 26 s
 
 fieldAverage fieldAverage1 write:
     Calculating averages
@@ -300,7 +300,7 @@ DILUPBiCGStab:  Solving for Uy, Initial residual = 4.57671805409329e-05, Final r
 DILUPBiCGStab:  Solving for Uz, Initial residual = 3.10531895927737e-05, Final residual = 3.65869267870605e-10, No Iterations 2
 GAMG:  Solving for p, Initial residual = 0.00564461202527859, Final residual = 9.03100456051626e-10, No Iterations 25
 time step continuity errors : sum local = 1.16895257027272e-14, global = 2.46786100148311e-17, cumulative = 2.72106020106105e-16
-ExecutionTime = 28.16 s  ClockTime = 28 s
+ExecutionTime = 27.78 s  ClockTime = 28 s
 
 fieldAverage fieldAverage1 write:
     Calculating averages
@@ -321,7 +321,7 @@ DILUPBiCGStab:  Solving for Uy, Initial residual = 5.5127556244108e-05, Final re
 DILUPBiCGStab:  Solving for Uz, Initial residual = 3.74022962235212e-05, Final residual = 6.07081666264412e-10, No Iterations 2
 GAMG:  Solving for p, Initial residual = 0.00635100514172882, Final residual = 8.02582832347314e-10, No Iterations 27
 time step continuity errors : sum local = 1.27150181336012e-14, global = 2.74730682191424e-17, cumulative = 3.26583925867379e-16
-ExecutionTime = 30.37 s  ClockTime = 30 s
+ExecutionTime = 30 s  ClockTime = 30 s
 
 fieldAverage fieldAverage1 write:
     Calculating averages
@@ -342,7 +342,7 @@ DILUPBiCGStab:  Solving for Uy, Initial residual = 7.15943894839226e-05, Final r
 DILUPBiCGStab:  Solving for Uz, Initial residual = 4.85233137141224e-05, Final residual = 6.92804357777759e-11, No Iterations 2
 GAMG:  Solving for p, Initial residual = 0.00731026958477451, Final residual = 5.8712368797375e-10, No Iterations 28
 time step continuity errors : sum local = 1.21186074472955e-14, global = 3.14953204780457e-17, cumulative = 3.91816075181603e-16
-ExecutionTime = 32.78 s  ClockTime = 33 s
+ExecutionTime = 32.42 s  ClockTime = 33 s
 
 fieldAverage fieldAverage1 write:
     Calculating averages
@@ -363,7 +363,7 @@ DILUPBiCGStab:  Solving for Uy, Initial residual = 0.000106272248240891, Final r
 DILUPBiCGStab:  Solving for Uz, Initial residual = 7.22728992113643e-05, Final residual = 2.27271040868335e-10, No Iterations 2
 GAMG:  Solving for p, Initial residual = 0.00947457245955755, Final residual = 9.49681297487333e-10, No Iterations 38
 time step continuity errors : sum local = 2.87779523535091e-14, global = 3.93806830417841e-17, cumulative = 4.71765453660601e-16
-ExecutionTime = 35.33 s  ClockTime = 35 s
+ExecutionTime = 34.96 s  ClockTime = 35 s
 
 fieldAverage fieldAverage1 write:
     Calculating averages
@@ -384,7 +384,7 @@ DILUPBiCGStab:  Solving for Uy, Initial residual = 9.95707296614437e-05, Final r
 DILUPBiCGStab:  Solving for Uz, Initial residual = 6.80448566762899e-05, Final residual = 2.03448686708871e-10, No Iterations 2
 GAMG:  Solving for p, Initial residual = 0.00896078925107982, Final residual = 9.50021877640028e-10, No Iterations 36
 time step continuity errors : sum local = 2.92942044529865e-14, global = 3.87411581605323e-17, cumulative = 5.5017406791325e-16
-ExecutionTime = 37.96 s  ClockTime = 38 s
+ExecutionTime = 37.55 s  ClockTime = 38 s
 
 fieldAverage fieldAverage1 write:
     Calculating averages
@@ -405,7 +405,7 @@ DILUPBiCGStab:  Solving for Uy, Initial residual = 9.6078963777145e-05, Final re
 DILUPBiCGStab:  Solving for Uz, Initial residual = 6.4478333172697e-05, Final residual = 1.80203563714344e-10, No Iterations 2
 GAMG:  Solving for p, Initial residual = 0.00851830618204413, Final residual = 6.12147895918778e-10, No Iterations 35
 time step continuity errors : sum local = 1.87722786981045e-14, global = 4.33217625490189e-17, cumulative = 6.3563300725995e-16
-ExecutionTime = 40.42 s  ClockTime = 40 s
+ExecutionTime = 39.97 s  ClockTime = 40 s
 
 fieldAverage fieldAverage1 write:
     Calculating averages
@@ -426,7 +426,7 @@ DILUPBiCGStab:  Solving for Uy, Initial residual = 9.31796325785338e-05, Final r
 DILUPBiCGStab:  Solving for Uz, Initial residual = 6.19267520033565e-05, Final residual = 1.59307094364014e-10, No Iterations 2
 GAMG:  Solving for p, Initial residual = 0.00838710196410116, Final residual = 7.51350054637313e-10, No Iterations 36
 time step continuity errors : sum local = 2.33795551926014e-14, global = 3.76191765874422e-17, cumulative = 7.12218988685829e-16
-ExecutionTime = 43.14 s  ClockTime = 43 s
+ExecutionTime = 42.64 s  ClockTime = 43 s
 
 fieldAverage fieldAverage1 write:
     Calculating averages
