@@ -1,0 +1,137 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2312                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+libs            (turbulenceModelSchemes);
+
+application     pimpleFoam;
+
+startFrom       latestTime;
+
+startTime       0;
+
+stopAt          endTime;
+
+endTime         12;
+
+deltaT          1.0e-6;
+
+writeControl    adjustableRunTime;
+
+writeInterval   0.1;
+
+purgeWrite      0;
+
+writeFormat     ascii;
+
+writePrecision  16;
+
+writeCompression off;
+
+timeFormat      general;
+
+timePrecision   6;
+
+runTimeModifiable true;
+
+adjustTimeStep  yes;
+
+maxCo           0.9;
+
+functions
+{
+    minMax
+    {
+        type            fieldMinMax;
+        libs            (fieldFunctionObjects);
+        fields          (U p);
+    }
+
+    DESField
+    {
+        // Mandatory entries
+        type            DESModelRegions;
+        libs            (fieldFunctionObjects);
+
+        // Optional entries
+        result          DESField;
+
+        // Optional (inherited) entries
+        writePrecision   6;
+        writeToFile      true;
+        useUserTime      false;
+
+        region          region0;
+        enabled         true;
+        log             true;
+        timeStart       0;
+        timeEnd         1000;
+        executeControl  timeStep;
+        executeInterval 1;
+        writeControl    writeTime;
+        writeInterval   -1;
+    }
+    Q1
+    {
+        type            Q;
+        libs            (fieldFunctionObjects);
+        writeControl    writeTime;
+    }
+    vorticity1
+    {
+        type            vorticity;
+        libs            (fieldFunctionObjects);
+        writeControl    writeTime;
+    }
+    yPlus
+    {
+        type            yPlus;
+        libs            (fieldFunctionObjects);
+        writeFields     yes;
+        writeControl    writeTime;
+    }
+    fieldAverage1
+    {
+        type            fieldAverage;
+        libs            (fieldFunctionObjects);
+        writeControl    writeTime;
+        timeStart       10;
+
+        fields
+        (
+            U
+            {
+                mean        on;
+                prime2Mean  on;
+                base        time;
+            }
+
+            p
+            {
+                mean        on;
+                prime2Mean  on;
+                base        time;
+            }
+        );
+    }
+
+    sample1
+    {
+        #include "sample"
+    }
+}
+
+
+// ************************************************************************* //
