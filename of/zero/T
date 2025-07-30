@@ -1,0 +1,88 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2412                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    object      T;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 1 0 0 0];
+
+internalField   uniform 300;
+
+boundaryField
+{
+    inlet_01
+    {
+        //type            fixedValue;
+        //value           uniform 260;
+        type            inletOutlet;
+        inletValue      uniform 300;
+        value           uniform 300;
+    }
+    inlet_02
+    {
+        type            fixedValue;
+        value           uniform 280;
+    }
+    inlet_03
+    {
+        type            fixedValue;
+        value           uniform 300;
+    }
+    inlet_04
+    {
+        type            fixedValue;
+        value           uniform 320;
+    }
+    inlet_05
+    {
+        type            fixedValue;
+        value           uniform 250;
+    }
+    inlet_06
+    {
+        type            fixedValue;
+        value           uniform 200;
+    }
+    inlet_07
+    {
+        type            fixedValue;
+        value           uniform 100;
+    }
+    inlet_08
+    {
+        type            fixedValue;
+        value           uniform 110;
+    }
+
+    outlet
+    {
+        type            inletOutlet;
+        inletValue      uniform 90;
+        value           uniform 90;
+    }
+
+    wall
+    {
+        //type            zeroGradient;
+        type            fixedValue;
+        value           uniform 300;
+    }
+
+    frontAndBack
+    {
+        type            empty;
+    }
+}
+
+
+// ************************************************************************* //

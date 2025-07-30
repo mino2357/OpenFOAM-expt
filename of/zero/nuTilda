@@ -1,0 +1,87 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2412                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    object      nuTilda;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 2 -1 0 0 0 0];
+
+internalField   uniform 0;
+
+boundaryField
+{
+    inlet_01
+    {
+        //type            fixedValue;
+        //value           uniform 0;
+        type            inletOutlet;
+        inletValue      uniform 0;
+        value           uniform 0;
+    }
+    inlet_02
+    {
+        type            fixedValue;
+        value           uniform 0;
+    }
+    inlet_03
+    {
+        type            fixedValue;
+        value           uniform 0;
+    }
+    inlet_04
+    {
+        type            fixedValue;
+        value           uniform 0;
+    }
+    inlet_05
+    {
+        type            fixedValue;
+        value           uniform 0;
+    }
+    inlet_06
+    {
+        type            fixedValue;
+        value           uniform 0;
+    }
+    inlet_07
+    {
+        type            fixedValue;
+        value           uniform 0;
+    }
+    inlet_08
+    {
+        type            fixedValue;
+        value           uniform 0;
+    }
+
+    outlet
+    {
+        type            inletOutlet;
+        inletValue      uniform 0;
+        value           uniform 0;
+    }
+
+    wall
+    {
+        type            fixedValue;
+        value           uniform 0;
+    }
+
+    frontAndBack
+    {
+        type            empty;
+    }
+}
+
+
+// ************************************************************************* //
